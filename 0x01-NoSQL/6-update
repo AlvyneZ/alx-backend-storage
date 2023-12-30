@@ -1,0 +1,9 @@
+// MongoDB script to update all documents in the 'school' collection
+//  that have name set to "Holberton school"
+db.school.update(
+    {"name": "Holberton school"},
+    {"$set": {
+        "address": "972 Mission street”
+    }},
+    {"multi": true}
+);
